@@ -1,0 +1,197 @@
+/* Reset CSS */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Classes */
+
+.perfil{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.perfil p{
+    margin-top: 8px;
+}
+
+.foto-perfil{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    width: 140px;
+}
+
+#switch{
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+#switch button{
+    width: 36px;
+    height: 36px;
+    background: white url(../img/moon-stars.svg) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transform: translate(-50%);
+    animation: slide-back 0.2s;
+}
+
+#switch button:hover{
+    outline: 8px solid rgba(255, 255, 255, 0.2);
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 100px;
+}
+
+.icones{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.icones a{
+    margin: 0px 20px;
+}
+
+.icones a:hover{
+    scale: 1.1;
+}
+
+.move-right {
+  animation: slideRight 0.3s ease;
+}
+
+
+/* Tags */
+
+body{
+    background: url(/img/bg-desktop.jpg) no-repeat center/cover;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+body *{
+    color: white;
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
+.move-right {
+  animation: slideRight 0.3s ease;
+}
+
+
+
+ul{
+    margin-top: 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
+
+li:hover{
+    background-color:rgba(244, 187, 255,0.1);
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+li{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px;
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+    margin-top: 22vh;
+}
+
+footer a:hover{
+    background-color: rgba(108, 45, 145, 0.5);
+    transition: 0.5s;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* light mode */
+
+.light{
+    background: url(/img/bg-desktop-light.jpg) no-repeat center/cover;
+    height: 100vh;
+    color: black;
+}
+
+ .light .perfil * {
+    color: black;
+}
+
+.light ul li {
+    border: 1px solid black;
+}
+
+.light ul *{
+    color: black;
+}
+
+.light .icones ion-icon{
+    color: black;
+}
+
+.light footer{
+    color: black;
+}
+
+.light a {
+    color: black;
+}
+
+.light #switch button{
+    animation: slide-in 0.2s forwards;
+    background: white url(../img/sun.svg) no-repeat center;
+}
+
+.light li:hover{
+    background-color:rgba(62, 16, 71, 0.1);
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+@keyframes slide-in{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes slide-back{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0;
+    }
+}

@@ -195,3 +195,34 @@ a{
         left: 0;
     }
 }
+
+@media(max-width: 500px){
+   .perfil{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.perfil p{
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.foto-perfil{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    width: 110px;
+}
+
+   ul{
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20vh;
+}
+}

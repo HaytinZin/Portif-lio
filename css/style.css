@@ -80,7 +80,7 @@
 /* Tags */
 
 body{
-    background: url(/img/bg-desktop.jpg) no-repeat center/cover;
+    background-color: black;  /* background: url(/img/bg-desktop.jpg) no-repeat center/cover; */
     height: 100vh;
     font-family: sans-serif;
 }
@@ -139,7 +139,7 @@ a{
 /* light mode */
 
 .light{
-    background: url(/img/bg-desktop-light.jpg) no-repeat center/cover;
+    background-color: white; /* background: url(/img/bg-desktop-light.jpg) no-repeat center/cover; */
     height: 100vh;
     color: black;
 }

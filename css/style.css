@@ -33,7 +33,7 @@
 #switch button{
     width: 36px;
     height: 36px;
-    background: white url(img/moon-stars.svg) no-repeat center;
+    background: white url(/img/moon-stars.svg) no-repeat center;
     border: 0;
     border-radius: 50%;
     position: absolute;
@@ -80,7 +80,7 @@
 /* Tags */
 
 body{
-    background: url(img/bg-desktop.jpg) no-repeat center/cover;
+    background: url(/img/bg-desktop.jpg) no-repeat center/cover;
     height: 100vh;
     font-family: sans-serif;
 }
@@ -139,7 +139,7 @@ a{
 /* light mode */
 
 .light{
-    background: url(img/bg-desktop-light.jpg) no-repeat center/cover;
+    background: url(/img/bg-desktop-light.jpg) no-repeat center/cover;
     height: 100vh;
     color: black;
 }
@@ -170,7 +170,7 @@ a{
 
 .light #switch button{
     animation: slide-in 0.2s forwards;
-    background: white url(img/sun.svg) no-repeat center;
+    background: white url(/img/sun.svg) no-repeat center;
 }
 
 .light li:hover{

@@ -5,10 +5,10 @@ function toggleMode() {
     const img = document.querySelector("#profile img");
 
     if (html.classList.contains("light")) { 
-        img.setAttribute("src", "/img/lightModeProfile.jpg"); // Se estiver no modo claro, altera a imagem para "avatar2.jpg"
+        img.setAttribute("src", "img/lightModeProfile.jpg"); // Se estiver no modo claro, altera a imagem para "avatar2.jpg"
 
     } else {
-        img.setAttribute("src", "/img/darkModeProfile.jpg"); // Se não estiver no modo claro (modo escuro), mantém ou coloca a imagem "avatar1.jfif"S
+        img.setAttribute("src", "img/darkModeProfile.jpg"); // Se não estiver no modo claro (modo escuro), mantém ou coloca a imagem "avatar1.jfif"S
     }
 }
 
